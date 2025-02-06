@@ -7,6 +7,24 @@
   </head>
 
   <body>
-    <%= yield %>
+     
+    <div>
+      <a href="<%= url_for(controller: 'rock', action: 'play') %>">Play Rock</a>
+    </div>
+
+    <div>
+      <a href="<%= url_for(controller: 'paper', action: 'play') %>">Play Paper</a>
+    </div>
+
+    <div>
+      <a href="<%= url_for(controller: 'scissors', action: 'play') %>">Play Scissors</a>
+    </div>
+
+    <%= yield %> <!-- This is where individual page content is inserted -->
+
+    <div>
+      <a href="<%= root_path %>">Rules</a>
+    </div>
+
   </body>
 </html>
