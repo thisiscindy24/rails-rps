@@ -12,5 +12,5 @@ class PaperController < ApplicationController
     end
 
     render template: "game_templates/play_paper"
- 
+  end
 end
